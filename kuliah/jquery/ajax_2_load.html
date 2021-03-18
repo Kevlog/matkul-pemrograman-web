@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>jQuery Ajax</title>
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('#loading').ajaxStart(function(){
+		$(this).fadeIn();
+	}).ajaxStop(function(){
+		$(this).fadeOut();
+	});
+	$('#menu a').click(function() {
+		var url = $(this).attr('href');
+		$('#container').load(url);
+		return false;
+	});
+});
+</script>
+<style type="text/css">
+* { font-family: Verdana, sans-serif; }
+#container { width: 80%; height: 400px; margin: 20px 0; padding: 10px; border: 1px dotted #999; }
+ul { padding: 0 }
+li { display: inline; margin: 0 3px; }
+#loading { position: absolute; top: 200; left: 500; }
+</style>
+</head>
+<body>
+<div id="loading" style="display:none"><img src="images/facebook_style_loader.gif"></div>
+<div>jQuery Ajax</div>
+<div>
+	<div id="menu">
+		<ul>
+			<li><a href="ajax_2_load.php?id=1">Menu 1</a></li>
+			<li><a href="ajax_2_load.php?id=2">Menu 2</a></li>
+			<li><a href="ajax_2_load.php?id=3">Menu 3</a></li>
+			<li><a href="ajax_2_load.php?id=4">Menu 4</a></li>
+		</ul>
+	</div>
+	<div id="container">
+		Isi dari file ajax_2_load.php akan ditampilkan di sini
+	</div>
+</div>
+</body>
+</html>

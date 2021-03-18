@@ -1,0 +1,27 @@
+<html>
+<head>
+<title></title>
+
+</head>
+<body>
+<code>{“mahasiswa":[{"firstName":“Ana", "lastName":“Unu"},{"firstName":“Budi", "lastName":“Man"},{"firstName":“Cici", "lastName":“Cuit"}]}
+</code>
+<form name="mat" method="post">
+ Data ke- (0,1,2): 
+ <input name="jml" type="text" size="5" maxlength="3"> 
+ <input name="btn" type="button" id="btn" value="hitung" onClick="hitung()">
+</form>
+<p id="hasil"></p>
+
+<script>
+function hitung () {
+var jml=document.forms['mat']['jml'].value;
+var datajson = '{"mahasiswa":[{"firstName":"Ana","lastName":"Unu" },{"firstName":"Budi","lastName":"Man" },{"firstName":"Cici","lastName":"Cuit" }]}';
+obj = JSON.parse(datajson);
+document.getElementById("hasil").innerHTML =
+obj.mahasiswa[jml].firstName + " " + obj.mahasiswa[jml].lastName;
+}
+</script>
+
+</body>
+</html>

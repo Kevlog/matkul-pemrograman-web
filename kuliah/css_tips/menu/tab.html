@@ -1,0 +1,58 @@
+<head>
+<title>Membuat CSS Tabs</title>
+<style type="text/css">
+*{ margin: 0; padding: 0; }
+p { margin: 5px 5px 10px 0; }
+#page-wrap { width: 960px; margin: 0 auto; }
+h1 { font: 36px Georgia, Serif; margin: 10px 0; }
+.group:after {
+ visibility: hidden; display: block;
+ font-size: 0; content: " "; clear: both; height: 0;
+}
+.tabs { list-style: none; }
+.tabs li { display: inline; }
+.tabs li a {
+ color: black; float: left; display: block;
+ padding: 4px 10px; margin-left: -1px;
+ position: relative; left: 1px;
+ background: white; text-decoration: none;
+}
+.tabs li a:hover { background: #ccc; }
+.tabbed-area { margin: 0 0 120px 0; }
+.box-wrap { position: relative; min-height: 250px; }
+.tabbed-area div div {
+  background: white; padding: 20px; min-height: 250px;
+  position: absolute; top: -1px; left: 0; width: 100%;
+}
+.tabbed-area div div, .tabs li a { border: 1px solid #ccc; }
+#box-one:target, #box-two:target, #box-three:target { z-index: 1; }
+</style>
+</head>
+<body>
+<div id="page-wrap">
+<div style="width: 420px;">
+<h1>CSS Tabs</h1>
+<div class="tabbed-area">
+ <ul class="tabs group">
+  <li><a href="#box-one">Tab 1</a></li>
+  <li><a href="#box-two">Tab 2</a></li>
+  <li><a href="#box-three">Tab 3</a></li>
+ </ul>
+
+ <div class="box-wrap">
+  <div id="box-one">
+   <p><b>Judul Tab 1</b></p>
+   <p>Ini Isi kotak 1</p>
+  </div>
+ <div id="box-two">
+  <p><b>Judul Tab 2</b></p>
+  <p>Ini Isi kotak 2</p>
+ </div>
+ <div id="box-three">
+  <p><b>Judul Tab 3</b></p>
+  <p>Ini Isi kotak 1</p>
+ </div>
+</div>
+</div>
+</body>
+</html>

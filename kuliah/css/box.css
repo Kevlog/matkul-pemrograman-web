@@ -1,0 +1,40 @@
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; 
+	padding: 0;
+ 
+	color: #000000;
+}
+#luar {
+	width: 780px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	text-align: left;
+} 
+#header { 
+	background: #DDDDDD; 
+	padding: 0 10px 0 20px;
+	width: 780px;
+}
+#tengah { 
+	width: 780px;
+}
+#kiri {
+	float: left; 
+	width: 200px; 
+	background: #EBEBEB; 
+	/*  padding: 15px 10px 15px 20px; */
+}
+#kanan {
+	float: left; 
+	width: 580px; 
+	background: #EB0000; 
+	/* padding: 15px 10px 15px 20px; */
+}
+#footer { 
+    width: 780px;
+	background: #DDDDDD; 
+	padding: 0 10px 0 20px;
+}

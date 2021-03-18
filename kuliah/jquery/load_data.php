@@ -1,0 +1,1 @@
+Tanggal loading TERKINI: <?=date('Y-m-d H:i:s');?>

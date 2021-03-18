@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Menu</title>
+<style type="text/css">
+body {
+	margin: 0;
+	font: small Georgia, "Times New Roman";
+	color: #444;
+}
+a { color: #3d1c0b; }
+#wrapper { width: 300px; margin: 0 auto; }
+a:hover { color: #995534; }
+#product-header {
+	background: transparent url(menu-glass-panel-top.png) no-repeat center;
+	height: 28px;
+}
+#product-footer {
+	background: transparent url(menu-glass-panel-bottom.png) no-repeat center;
+	height: 28px;
+}
+ul#product {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: transparent url(menu-glass-panel-body.png) center repeat-y;
+}
+ul#product li span { padding-left: 2em; }
+ul#product li.trigger { padding: .4em; }
+ul#product .trigger ul.menu {
+	margin-top: 1.2em;
+	margin-left: 5em;
+ }
+.trigger ul.menu {
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding: .4em;
+	list-style: none;
+	background: transparent url(menu-glass-panel-body.png) center repeat-y;
+	border: solid 1px #ccc;
+}
+.trigger ul.menu li { padding: .1em .5em; }
+.trigger ul.menu li a { display: block; }
+.trigger:hover {
+	background: transparent url(menu-glass-panel-body-selected.png) no-repeat center;
+}
+.trigger:hover ul.menu { display: block; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<h1>Makanan & Minuman</h1>
+<div id="product-header"></div>
+ <ul id="product">
+  <li class="trigger">
+   <ul class="menu">
+    <li><a href="#">Pedas Panas</a> </li>
+    <li><a href="#">Garing</a> </li>
+    <li><a href="#">Bumbu Padang</a> </li>
+   </ul>
+  <span>Bebek Goreng</span> </li>
+   <li class="trigger">
+    <ul class="menu">
+     <li><a href="#">Goreng Pasir</a> </li>
+     <li><a href="#">Bumbu Rujak</a> </li>
+     <li><a href="#">Masak dengan Bulunya</a> </li>
+    </ul>
+  <span>Ayam Goreng</span> </li>
+    <li class="trigger">
+     <ul class="menu">
+      <li><a href="#">Teh Bohay</a> </li>
+      <li><a href="#">Teh </a></li>
+     </ul>
+  <span>Teh Manis</span> </li>
+    <li class="trigger">
+     <ul class="menu">
+      <li><a href="#">Tubruk</a> </li>
+      <li><a href="#">Luwak</a> </li>
+     </ul>
+   <span>Kopi</span> </li>
+</ul>
+<div id="product-footer"></div>
+</div>
+</body>
+</html>
+

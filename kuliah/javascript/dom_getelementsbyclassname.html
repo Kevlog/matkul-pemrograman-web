@@ -1,0 +1,18 @@
+<html>
+<head>
+<title></title>
+<body>
+<script>
+ function klik() {
+  var hasil = document.getElementsByClassName("hasil");
+  hasil[0].innerHTML="teks ini dari Javascript ke 0";
+  hasil[1].innerHTML="teks ini dari Javascript ke 1";
+  hasil[2].innerHTML=Date();
+ }
+</script>
+<div class="hasil">teks asli - div</div><br>
+<p class="hasil">teks asli - p</p><br>
+<button class="hasil">teks asli - button</button><p>
+<input type="button" value="klik disini" onClick="klik()">
+</body>
+</html>

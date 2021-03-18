@@ -1,0 +1,63 @@
+<html  >
+<head>
+<title>Tabel Vertical Zebra</title>
+<style type="text/css">
+body {  line-height: 1em; }
+
+#ver-zebra {
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 12px;
+	margin: 20px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#ver-zebra th {
+	font-size: 14px;
+	font-weight: normal;
+	padding: 12px 15px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	color: #039;
+}
+#ver-zebra td {
+	padding: 8px 15px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	color: #669;
+}
+.vzebra-odd  { background: #eff2ff; }
+.vzebra-even { background: #e8edff; }
+#ver-zebra #vzebra-web {
+	background: #d0dafd;
+	border-bottom: 1px solid #c8d4fd;
+}
+#ver-zebra #vzebra-office, #ver-zebra #vzebra-desain {
+	background: #dce4ff;
+	border-bottom: 1px solid #d6dfff;
+}
+</style>
+</head>
+<body>
+<table id="ver-zebra">
+<colgroup>
+ <col class="vzebra-odd" />
+ <col class="vzebra-even" />
+ <col class="vzebra-odd" />
+</colgroup>
+<thead>
+ <tr>
+  <th scope="col" id="vzebra-office">Office 2010</th>
+  <th scope="col" id="vzebra-web">Web Design</th>
+  <th scope="col" id="vzebra-desain">Grafis</th>
+ </tr>
+</thead>
+<tbody>
+ <tr><td>Word</td><td>HTML 5.0</td><td>Coreldraw X5</td></tr>
+ <tr><td>Excel</td><td>CSS3</td><td>Photoshop X5</td></tr>\
+ <tr><td>PowerPoint</td><td>jQuery</td><td>Illustrator X5</td></tr>
+</tbody>
+</table>
+</body>
+</html>
+

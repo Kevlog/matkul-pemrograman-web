@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>Local Storage</title>
+	</head>
+	<body>
+<script type="text/javascript">
+ if (sessionStorage.pagecount)  {
+  sessionStorage.pagecount=Number(sessionStorage.pagecount) +1;  
+ } else  {  
+  sessionStorage.pagecount=1;  }
+  document.write("Dikunjungi "+sessionStorage.pagecount+" kali dalam sesi ini");</script>   
+	</body>
+</html>

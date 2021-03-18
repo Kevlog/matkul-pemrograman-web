@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Ajax Jam</title>
+<script>
+var XMLHttpRequestObject = false;
+if (window.XMLHttpRequest) {
+  XMLHttpRequestObject = new XMLHttpRequest();
+} else {
+  XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
+}
+function getJam (sumberdata, divID) {
+ if (XMLHttpRequestObject) {
+  var obj=document.getElementById(divID);
+  XMLHttpRequestObject.open("GET",sumberdata);
+  XMLHttpRequestObject.onreadystatechange = function () {
+   if (XMLHttpRequestObject.readyState==4 && XMLHttpRequestObject.status==200) {
+     obj.innerHTML = XMLHttpRequestObject.responseText;
+	 setTimeout("getJam('jam_server.php','divjam')",1000);
+	 }
+  }
+  XMLHttpRequestObject.send(null);
+  }
+}
+window.onload=function() {
+ setTimeout("getJam('jam_server.php','divjam')",1000);
+}   
+</script>
+</head>
+<body>
+<div id="divjam"></div>
+</body>
+</html>

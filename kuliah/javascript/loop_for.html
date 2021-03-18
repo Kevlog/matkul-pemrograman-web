@@ -1,0 +1,23 @@
+<html>
+<head>
+<title></title>
+<script>
+ function hitung () {
+   var jml=document.forms['mat']['jml'].value;
+   var teks="";
+   for (i=1; i<=jml; i++) {
+      teks = teks + i + ' dikuadratkan ' + Math.pow(i,2) + '<br>';
+   }
+   document.getElementById('hasil').innerHTML=teks;
+ }
+</script>
+</head>
+<body>
+<form name="mat" method="post">
+ Berapa perulangan: 
+ <input name="jml" type="text" size="5" maxlength="3"> 
+ <input name="btn" type="button" id="btn" value="hitung" onclick="hitung()">
+</form>
+<div id="hasil"></div>
+</body>
+</html>

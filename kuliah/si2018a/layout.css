@@ -1,0 +1,43 @@
+body {
+	background: url('images/background.jpg');
+	background-attachment: fixed;
+	font: 13px Arial;
+}
+#layout {
+	width:822px;
+	margin: auto;
+}
+#atas {
+	border: 1px dotted purple;
+	border-radius: 5px;
+	width: 800px; height: 60px;
+	padding-left: 20px;
+	background-color: white;
+	margin-bottom: 5px;
+}
+#kiri {
+	float: left;
+	border: 1px dotted purple;
+	border-radius: 5px;
+	width: 195px;
+	padding: 0 5px; 
+	background-color: white;
+	margin-right: 5px;
+}
+#kanan {
+	float: left;
+	border: 1px dotted purple;
+	border-radius: 5px;
+	height: 1200px;
+	width: 598px;
+	padding: 0 5px; 
+	background-color: white;
+}
+#bawah {
+	float: left;
+	border: 1px dotted purple;
+	border-radius: 5px;
+	width:820px;
+	background-color: white;
+	margin-top: 5px;
+}

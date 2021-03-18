@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Membuat Navigasi Bar dari Daftar</title>
+<style type="text/css">
+#nav {
+ margin:0;
+ padding:0;
+ float:left;
+ border:1px solid #42432d;
+ border-width:1px 0
+}
+#nav li {
+ padding:0;
+ margin:0;
+ display:inline;
+}
+#nav a:link, #nav a:visited {
+ color:#000;
+ background:#b2b580;
+ padding:5px 20px 4px 10px;
+ float:left;
+ width:auto;
+ border-right:1px solid #42432d;
+ text-decoration:none;
+ font:bold 1em/1em Arial, Helvetica, sans-serif;
+ text-transform:uppercase;
+}
+
+#nav li:first-child a {
+ border-left:10px solid #42432d;
+}
+#nav a:hover, #nav a:focus {
+ color:#fff;
+ background:#727454;
+}
+#nav li a {
+background:#e35a00;
+ color:#fff;
+}
+#nav li a:hover { background:#e35a00; }
+#nav a:active { background:green;  color:#fff; }
+</style>
+</head>
+<body>
+<ul id="nav">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Archive</a></li>
+<li><a href="#">Lab</a></li>
+<li><a href="#">Reviews</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</body>
+</html>

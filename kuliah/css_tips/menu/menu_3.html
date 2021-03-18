@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Menu</title>
+<style type="text/css">
+ul {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, Verdana;
+ font-size: 14px;
+ list-style: none;
+}
+ul li {  display: block;  position: relative;  float: left; }
+li ul { display: none; }
+ul li a {
+ margin-left: 1px;
+ padding: 5px 15px 5px 15px;
+ white-space: nowrap;
+ background: #2C5463;
+ display: block;
+ text-decoration: none;
+ color: #ffffff;
+ border-top: 1px solid #ffffff;
+}
+ul li a:hover { background: #617F8A; }
+li:hover ul {  display: block;  position: absolute; }
+li:hover li {  float: none; font-size: 11px; }
+li:hover a { background: #617F8A; }
+li:hover li a:hover { background: #95A9B1; }
+</style>
+</head>
+<body>
+ <ul id="menu">
+  <li><a href="">Home</a></li>
+  <li><a href="">About Us</a>
+   <ul>
+    <li><a href="">Tim Kami</a></li>
+    <li><a href="">Sejarah</a></li>
+    <li><a href="">Visi</a></li>
+   </ul>
+  </li>
+  <li><a href="">Training</a>
+   <ul>
+    <li><a href="">Office 2007/10</a></li>
+    <li><a href="">Web Design</a></li>
+    <li><a href="">Programming</a></li>
+    <li><a href="">Desain Grafis</a></li>
+    <li><a href="">Animasi</a></li>
+   </ul>
+  </li>
+  <li><a href="">Contact Us</a>
+   <ul>
+    <li><a href="">Online</a></li>
+    <li><a href="">Telphone</a></li>
+    <li><a href="">Jejaring Sosial</a></li>
+   </ul>
+  </li>
+</ul>
+</body>
+</html>
+

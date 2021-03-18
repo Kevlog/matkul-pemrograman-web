@@ -1,0 +1,21 @@
+<html>
+<head>
+<title></title>
+<body>
+<script>
+ function kali(a,b) {
+   var vkali = a+' X '+b+' = ' + a*b;
+   document.getElementById('hasil').innerHTML = vkali;
+ }
+ function tambah(a,b) {
+   var vkali = a+' + '+b+' = ' + (a+b);
+   document.getElementById('hasil').innerHTML = vkali;
+ }
+ var a=5, b=7;
+
+</script>
+<p id="hasil">hasilnya disini</p>
+<input type="button" value="klik disini proses kali" onClick="kali(a,b)">
+<input type="button" value="klik disini proses tambah" onMouseOver="tambah(a,b)">
+</body>
+</html>

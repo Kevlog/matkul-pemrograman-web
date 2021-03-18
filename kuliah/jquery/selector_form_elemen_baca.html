@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>jQuery</title>
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      alert("lihat proses selanjutnya");
+      $(".info_nama").append($(".nama").val());
+	  $(".info_jk_f"). text($("#jkel").attr("checked"));
+	  $(".info_jk").append($("input[name='rjk']:checked").val());
+	  $(".info_setuju").append($("input[name='csetuju']:checked").val());
+      $(".info_button").append($("#button").val());
+	  $(".nama").focus();
+   });
+</script>
+</head>
+<body>
+ nama: <input type="text" class="nama" value="Mas Ari"><br>
+  <input name="rjk" type="radio" id="jkel" value="L" checked >Laki-laki 
+  <input name="rjk" type="radio" id="jkel" value="P">Perempuan<br>
+  Anda setuju? 
+  <input name="csetuju" type="checkbox" id="checkbox" value="YA" checked>ya  <br>
+<input type="submit" id="button" value="silakan di-klik">
+<p><strong>JQuery membaca isi form diatas:</strong><br>
+<div class="info_nama">Isi dari textfield nama:</div> 
+<div class="info_jk_f">Jenis Kelamin status checked: </div> 
+<div class="info_jk">Jenis Kelamin: </div>
+<div class="info_setuju">Setuju: </div>
+<div class="info_button">tulisan button: </div> </p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title></title>
+<script language="javascript">
+ function ubahwarna(pil) 
+ { document.bgColor=pil;
+  }
+</script>
+</head>
+<body>
+<p>Input Event  - Ubah Warna Background</p>
+<p>onclick :
+  <input onFocus="this.style.background = 'yellow'"><br>
+onblur :
+  <input onblur="this.value=this.value.toUpperCase()"> 
+  tulis kata ubah upper case
+<p>onkeyup :
+  <input onkeyup="document.getElementById('hasil').innerHTML=this.value"> 
+  Anda menulis: <span id="hasil"></span>
+<p>onkeypress :
+  <input onkeypress="document.getElementById('hasil1').innerHTML=this.value"> 
+  Anda menulis: <span id="hasil1"></span>
+<p>onkeydown :
+  <input onkeydown="document.getElementById('hasil2').innerHTML=this.value"> 
+  Anda menulis: <span id="hasil2"></span>
+<p>
+  onchange :
+    <select name="menu" onChange="document.getElementById('hari').innerHTML=this.value">
+    <option value="Senin">1</option>
+    <option value="Selasa">2</option>
+    <option value="Rabu">3</option>
+    <option value="Kamis">4</option>
+    <option value="Jumat">5</option>
+    <option value="Sabtu">6</option>
+    <option value="Minggu">7</option>
+  </select>
+  Anda memilih: <span id="hari"></span>
+</body>
+</html>

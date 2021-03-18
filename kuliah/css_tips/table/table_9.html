@@ -1,0 +1,65 @@
+<html  >
+<head>
+<title>Membuat Cell Background</title>
+<style type="text/css">
+body {  line-height: 1.0em; }
+
+#gradient-style {
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 12px;
+	margin: 20px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#gradient-style th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #b9c9fe url("gradhead.png") repeat-x;
+	border-top: 2px solid #d3ddff;
+	border-bottom: 1px solid #fff;
+	color: #039;
+}
+#gradient-style td {
+	padding: 8px;
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid #fff;
+	background: #e8edff url("gradback.png") repeat-x;
+}
+#gradient-style tfoot tr td {
+	background: #e8edff;
+	font-size: 12px;
+	color: #99c;
+}
+#gradient-style tbody tr:hover td {
+	background: #d0dafd url("gradhover.png") repeat-x;
+	color: #339;
+}
+</style>
+</head>
+<body>
+<table id="gradient-style">
+<thead>
+<tr>
+ <th scope="col">Employee</th>
+ <th scope="col">Division</th>
+ <th scope="col">Suggestions</th>
+</tr>
+</thead>
+<tfoot>
+ <tr>
+  <td colspan="4">Saran untuk Promo Baru</td>
+ </tr>
+</tfoot>
+<tbody>
+ <tr><td>Evelyn</td><td>Marketing</td><td>Beri diskon</td></tr>
+ <tr><td>Jessica</td><td>Advertising</td><td>Beri bonus</td></tr>
+ <tr><td>Ira</td><td>Marketing</td><td>Produk Baru</td></tr>
+ <tr><td>Marsha</td><td>Marketing</td><td>Packaging Baru</td></tr>
+</tbody>
+</table>
+</body>
+</html>
+

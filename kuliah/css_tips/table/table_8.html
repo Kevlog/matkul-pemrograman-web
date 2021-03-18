@@ -1,0 +1,59 @@
+<html  >
+<head>
+<title>Membuat Table Background</title>
+<style type="text/css">
+body {  line-height: 1.5em; }
+#background-image {
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 12px;
+	margin: 20px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+	background: url("blurry.jpg") 330px 59px no-repeat;
+}
+#background-image th {
+	padding: 12px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #339;
+}
+#background-image td {
+	padding: 9px 12px;
+	color: #669;
+	border-top: 1px solid #fff;
+}
+#background-image tfoot td { font-size: 11px; }
+#background-image tbody td { background: url("back.png"); }
+
+#background-image tbody tr:hover td {
+	color: #339;
+	background: none;
+}
+
+</style>
+</head>
+<body>
+<table id="background-image" >
+<thead>
+<tr>
+ <th scope="col">Employee</th>
+ <th scope="col">Division</th>
+ <th scope="col">Suggestions</th>
+</tr>
+</thead>
+<tfoot>
+ <tr>
+  <td colspan="4">Saran untuk Promo Baru</td>
+ </tr>
+</tfoot>
+<tbody>
+ <tr><td>Evelyn</td><td>Marketing</td><td>Beri diskon</td></tr>
+ <tr><td>Jessica</td><td>Advertising</td><td>Beri bonus</td></tr>
+ <tr><td>Ira</td><td>Marketing</td><td>Produk Baru</td></tr>
+ <tr><td>Marsha</td><td>Marketing</td><td>Packaging Baru</td></tr>
+</tbody>
+</table>
+</body>
+</html>
+

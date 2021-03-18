@@ -1,0 +1,21 @@
+<html>
+<head>
+<title></title>
+<body>
+<script>
+ function kali() {
+   var vin1 = document.getElementById('in1').value;
+   var vin2 = document.getElementById('in2').value;
+    document.getElementById('hasil').innerHTML = (vin1 * vin2) + ' <b style="color:purple;">buah</b>';
+ }
+</script>
+
+  <input id="in1" type="text" size="3" maxlength="3"> 
+X 
+<input id="in2" type="text" size="3" maxlength="3"> 
+= <span id="hasil"></span> 
+<p>
+  <input type="button" value="klik disini proses kali" onClick="kali()">
+</p>
+</body>
+</html>

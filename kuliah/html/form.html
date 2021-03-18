@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head><title>Form Elemen HTML</title></head>
+<body>
+<h2>Form Elemen HTML</h2>
+<hr>
+<strong>Form:</strong> Text Field</p>
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF">Nama / Alamat :
+        <input name="vnama" type="text"  id="vnama" size="30" maxlength="255"></td>
+    </tr>
+  </table><br>
+atributr: <code>readonly disabled</code>
+<p><b>Kode sumber :</b> <br>
+<code>
+ &nbsp;&lt;input name="vnama" type="text" id="vnama" size="30" maxlength="255"&gt;
+</code>
+<hr>
+<strong>Form:</strong> Textarea
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF">Berita / Keterangan :
+      <textarea name="vberita" cols="60" rows="3" id="vberita"></textarea></td>
+    </tr>
+</table><br>
+atributr: <code>readonly disabled</code>
+<p><b>Kode sumber :</b> <br>
+<code>
+ &nbsp;&lt;textarea name=&quot;vberita&quot; cols=&quot;60&quot; rows=&quot;3&quot; id=&quot;vberita&quot;&gt;&lt;/textarea&gt;
+</code>
+<hr>
+<strong>Form:</strong> Button
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF"><input type="submit" name="vbutton" id="vbutton" value="    klik kirim    ">
+      <input type="reset" name="vbutton1" id="vbutton1" value="    reset    "></td>
+    </tr>
+</table><br>
+<p><b>Kode sumber :</b> <br>
+  <code>&lt;input type=&quot;submit&quot; name=&quot;vbutton&quot; id=&quot;vbutton&quot; value=&quot;    klik kirim    &quot;&gt;<br>
+  &lt;input type=&quot;reset&quot; name=&quot;vbutton1&quot; id=&quot;vbutton1&quot; value=&quot;    reset    &quot;&gt;
+  </code>
+<hr>
+<strong>Form:</strong> Checkbox
+</p>
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF">Hobby :
+        <input name="vhobby1" type="checkbox" id="vhobby1" value="1">
+        Memancing 
+         &nbsp;&nbsp;&nbsp;&nbsp;
+<input name="vhobby2" type="checkbox" id="vhobby2" value="1">
+Coding &nbsp;&nbsp;&nbsp;
+<input name="vhobby3" type="checkbox" id="vhobby3" value="1" checked>
+Touring </td>
+    </tr>
+</table>
+<p><b>atributr: <code>checked</code><br>
+  <br>
+  Kode sumber :</b> <br>
+  <code>&lt;input name=&quot;vhobby1&quot; type=&quot;checkbox&quot; id=&quot;vhobby1&quot; value=&quot;1&quot;&gt; Memancing <br>
+  &lt;input name=&quot;vhobby2&quot; type=&quot;checkbox&quot; id=&quot;vhobby2&quot; value=&quot;1&quot;&gt; Coding<br>
+&lt;input name=&quot;vhobby3&quot; type=&quot;checkbox&quot; id=&quot;vhobby3&quot; value=&quot;1&quot; checked&gt;
+Touring  </code>
+<hr>
+<strong>Form:</strong> </p>Radio Button
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF">Jenis Kelamin :
+        <input type="radio" name="vjkel" id="radio" value="L">
+      Laki-laki 
+      &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="vjkel" id="radio2" value="P"> 
+Perempuan
+</td>
+    </tr>
+</table><br>
+<b>atributr: <code>checked</code></b>
+<p><b>Kode sumber :</b> <br>
+<code>&lt;input type=&quot;radio&quot; name=&quot;vjkel&quot; id=&quot;radio&quot; value=&quot;L&quot;&gt;Laki-laki <br>
+ &lt;input type=&quot;radio&quot; name=&quot;vjkel&quot; id=&quot;radio1&quot; value=&quot;P&quot;&gt; </code>
+<hr>
+<strong>Form:</strong>Select / List Menu
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF">Pilih Kota Asal :      
+        <select name="vkab1" id="vkab1">
+          <option value="1">Surabaya</option>
+          <option value="2">Gresik</option>
+          <option value="3">Sidoarjo</option>
+          <option value="4">Jombang</option>
+      </select>
+        <select name="vkab2" multiple id="vkab2">
+          <option value="1">Surabaya</option>
+          <option value="2">Gresik</option>
+          <option value="3">Sidoarjo</option>
+          <option value="4">Jombang</option>
+      </select>
+        <select name="vkab3" size="2" id="vkab3">
+          <option value="1">Surabaya</option>
+          <option value="2">Gresik</option>
+          <option value="3">Sidoarjo</option>
+          <option value="4">Jombang</option>
+      </select></td>
+    </tr>
+</table><br>
+<p><b>Kode sumber :</b> <br>
+  <code>&lt;select name=&quot;vkab1&quot; id=&quot;vkab1&quot;&gt;<br>
+&lt;option value=&quot;1&quot;&gt;Surabaya&lt;/option&gt;<br>
+&lt;option value=&quot;2&quot;&gt;Gresik&lt;/option&gt;<br>
+&lt;option value=&quot;3&quot;&gt;Sidoarjo&lt;/option&gt;<br>
+&lt;option value=&quot;4&quot;&gt;Jombang&lt;/option&gt;<br>
+&lt;/select&gt;<br>
+&lt;select name=&quot;vkab2&quot; multiple id=&quot;vkab2&quot;&gt;<br>
+&lt;option value=&quot;1&quot;&gt;Surabaya&lt;/option&gt;<br>
+&lt;option value=&quot;2&quot;&gt;Gresik&lt;/option&gt;<br>
+&lt;option value=&quot;3&quot;&gt;Sidoarjo&lt;/option&gt;<br>
+&lt;option value=&quot;4&quot;&gt;Jombang&lt;/option&gt;<br>
+&lt;/select&gt;<br>
+&lt;select name=&quot;vkab3&quot; size=&quot;2&quot; id=&quot;vkab3&quot;&gt;<br>
+&lt;option value=&quot;1&quot;&gt;Surabaya&lt;/option&gt;<br>
+&lt;option value=&quot;2&quot;&gt;Gresik&lt;/option&gt;<br>
+&lt;option value=&quot;3&quot;&gt;Sidoarjo&lt;/option&gt;<br>
+&lt;option value=&quot;4&quot;&gt;Jombang&lt;/option&gt;<br>
+&lt;/select&gt;
+  </code>
+<hr>
+<strong>Form:</strong> File Field</p>
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF">Upload File :      
+        <input name="vfile" type="file" id="vfile" size="40" maxlength="255"></td>
+    </tr>
+</table><br>
+<p><b>Kode sumber :</b> <br>
+  <code>
+  &nbsp;&lt;input name=&quot;vfile&quot; type=&quot;file&quot; id=&quot;vfile&quot; size=&quot;40&quot; maxlength=&quot;255&quot;&gt;
+  </code>
+<hr>
+<strong>Form:</strong> Text Field</p>
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF"> <input name="vimg" type="image" id="vimg" src="images/btnLiveChat.gif" alt="chat online yuk ..."></td>
+    </tr>
+</table><br>
+<p><b>Kode sumber :</b> <br>
+  <code>&lt;input name=&quot;vimg&quot; type=&quot;image&quot; id=&quot;vimg&quot; src=&quot;images/btnLiveChat.gif&quot; alt=&quot;chat online yuk ...&quot;&gt;
+  </code>
+<hr>
+<strong>Form:</strong> Hidden Field</p>
+<p><strong>Tampilan:</strong>
+<table width="100%" bgcolor="#FF0066" border="0" cellpadding="5" cellspacing="1">
+    <tr>
+      <td bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+</table><br>
+<p><b>Kode sumber :</b> <br>
+  <code>
+  &nbsp;&lt;input name=&quot;vid&quot; type=&quot;hidden&quot; id=&quot;vid&quot; value=&quot;145063101&quot;&gt;
+  </code>
+<hr>
+</body>
+</html>

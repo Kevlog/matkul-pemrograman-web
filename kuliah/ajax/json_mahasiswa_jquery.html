@@ -1,0 +1,26 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<code>{"mahasiswa":[{"firstName":"Ana", "lastName":"Unu"},{"firstName":"Budi", "lastName":"Man"},{"firstName":"Cici", "lastName":"Cuit"}]}
+</code>
+<form name="mat" method="post">
+ Data ke- (0,1,2): 
+ <input id="jml" type="text" size="5" maxlength="3"> 
+ <input type="button" id="btn" value="hitung">
+</form>
+<p id="hasil"></p>
+  <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+  <script>
+$(document).ready(function() {
+  $("#btn").click(function(){	
+  var jml=$('#jml').val();
+  var datajson = '{"mahasiswa":[{"firstName":"Ana","lastName":"Unu" },{"firstName":"Budi","lastName":"Man" },{"firstName":"Cici","lastName":"Cuit" }]}';
+  obj = JSON.parse(datajson);
+  $('#hasil').text(obj.mahasiswa[jml].firstName + " " + obj.mahasiswa[jml].lastName);
+  });
+}); 		
+</script>
+</body>
+</html>

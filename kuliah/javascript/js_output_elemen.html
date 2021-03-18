@@ -1,0 +1,25 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<code>document.getElementById()</code>
+<div id="tujuan">teks asli - div</div> 
+<p id="tujuan">teks asli - p</p> 
+<button id="tujuan">teks asli - button</button>
+<script>
+  document.getElementById("tujuan").innerHTML="teks ini dari Javascript";
+</script>
+<hr>
+<code>document.getElementsByClassName()</code>
+<div class="tujuan1">teks asli - div</div><br>
+<p class="tujuan1">teks asli - p</p><br>
+<button class="tujuan1">teks asli - button</button>
+<script>
+  var hasil = document.getElementsByClassName("tujuan1");
+  hasil[0].innerHTML="teks ini dari Javascript ke 0";
+  hasil[1].innerHTML="teks ini dari Javascript ke 1";
+  hasil[2].innerHTML="teks ini dari Javascript ke 2";
+</script>
+</body>
+</html>

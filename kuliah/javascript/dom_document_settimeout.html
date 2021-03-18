@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<script type="text/javascript">
+    function ShowTime()
+    {
+        var dt = new Date();
+        document.write(dt.toTimeString());
+        // window.alert(dt.toTimeString());
+        window.setTimeout("ShowTime();", 500);
+    }
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+    ShowTime();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html> 
+<head>
+<title>Field</title>
+<style type="text/css">
+.cssform p{
+clear: left;
+margin: 0;
+padding: 5px 0 8px 0;
+padding-left: 155px; /* lebar kolom kiri yg terdiri dari elemen label */
+border-top: 1px dashed gray;
+height: 1%;
+}
+.cssform label{
+font-weight: bold;
+float: left;
+margin-left: -155px; /* lebar kolom kiri */
+width: 150px; /* lebar label lbh kecil dari kolom kiri - buat margin kanan */
+}
+.cssform input[type="text"]{ /* lebar kotak teks  */
+width: 180px;
+}
+
+.cssform textarea{
+width: 250px;
+height: 150px;
+}
+</style>
+</head>
+<body>
+<h1>Field Type HTML5</h1>
+<form id="myform" class="cssform" action="#" method="post">
+<p>
+<label for="user">Nama</label>
+<input type="text" value="isikan namamu" id="vnama" name="vnama" /> <code>&lt;input type="text" value="isikan namamu" id="vnama" name="vnama" /&gt;</code>
+</p>
+<p>
+<label for="emailaddress">Email:</label>
+<input type="email" value="" />
+ <code>&lt;input type="email" value="" /&gt;</code>
+ </p>
+<p>
+ <label for="tgl">Tanggal:</label>
+ <input type="date" value="" />
+ <code>&lt;input type="date" value="" /&gt;</code></p>
+<p>
+ <label for="wkt">Bulan:</label>
+ <input type="month" value="" />
+ <code>&lt;input type="month" value="" /&gt;</code></p> 
+<p>
+ <label for="week">Minggu:</label>
+ <input type="week" value="" />
+ <code>&lt;input type="week" value="" /&gt;</code></p> 
+<p>
+ <label for="time">Time:</label>
+ <input type="time" value="" />
+ <code>&lt;input type="time" value="" /&gt;</code></p>
+<p>
+ <label for="datetime">Date Time:</label>
+ <input type="datetime" value="" />
+ <code>&lt;input type="datetime" value="" /&gt;</code></p>
+<p>
+ <label for="datetime-local">Date Time (Local):</label>
+ <input type="datetime-local" value="" />
+ <code>&lt;input type="datetime-local" value="" /&gt;</code></p>  
+<p>
+ <label for="url">Website:</label>
+ <input type="url" />
+ <code>&lt;input type="url" value="" /&gt;</code></p> 
+ <p>
+ <label for="usia">Usia:</label>
+   <input type="number" min="6" max="15" />
+ <code>&lt;input type="number" min="6" max="15" /&gt;</code></p> 
+<p>
+ <label for="rate">Rating:</label>
+   1 <input type="range" min="1" max="10" /> 10
+ <code>&lt;input type="range" min="1" max="10" /&gt;</code></p> 
+<p>
+ <label for="color">Warna:</label>
+   <input type="color" /> 
+ <code>&lt;input type="color" /&gt;</code></p> 
+<p>
+ <label for="search">Search:</label>
+   <input type="search" /> 
+ <code>&lt;input type="search" /&gt;</code></p>
+
+<div style="margin-left: 150px;">
+<input type="submit" value="Submit" />
+</div>
+</form>
+</body>
+</html>
